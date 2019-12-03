@@ -115,15 +115,15 @@ class PlotExtraction(QWidget):
         # curves
         if self.player_extractions.curve is None:
             self.player_extractions.curve, = self.graph.plot(self.player_extractions.xdata, self.player_extractions.ydata, "-k",
-                                                             marker=curve_marker[0], label=trans_GA("Your extraction"))
+                                                             marker=curve_marker[0], label=trans_GA(u"Your extraction"))
         if self.group_extractions.curve is None:
             self.group_extractions.curve, = self.graph.plot(self.group_extractions.xdata, self.group_extractions.ydata, "--k",
-                                                           marker=curve_marker[1], label=trans_GA("Group extraction"))
+                                                           marker=curve_marker[1], label=trans_GA(u"Group extraction"))
         self.graph.set_ylim(-0.1, pms.DECISION_MAX + 0.1)
-        self.graph.set_yticks(np.arange(0, pms.DECISION_MAX + 0.1, 0.2))
+        self.graph.set_yticks(np.arange(0, pms.DECISION_MAX + 0.1, 0.4))
         self.graph.set_ylabel("")
-        self.graph.grid(axis="both", ls="--")
-        self.graph.legend(loc="upper left", ncol=2)
+        self.graph.grid()
+        self.graph.legend(loc="upper left", ncol=2, fontsize=8)
         self.graph.set_title(trans_GA(u"Extraction"))
         self.canvas.draw()
 
