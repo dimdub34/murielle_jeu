@@ -103,12 +103,12 @@ class PlotExtraction(QWidget):
         if pms.DYNAMIC_TYPE == pms.DISCRETE:
             self.graph.set_xlim(-1, pms.NOMBRE_PERIODES + 1)
             self.graph.set_xlabel(trans_GA(u"Periods"))
-            self.graph.set_xticks(range(0, pms.NOMBRE_PERIODES + 1), 5)
+            self.graph.set_xticks(range(0, pms.NOMBRE_PERIODES + 1, 5))
             curve_marker = [".", "x"]
 
         elif pms.DYNAMIC_TYPE == pms.CONTINUOUS:
             self.graph.set_xlim(-5, pms.CONTINUOUS_TIME_DURATION.total_seconds() + 5)
-            self.graph.set_xticks(range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1, 30))
+            self.graph.set_xticks(range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1, 60))
             self.graph.set_xlabel(trans_GA(u"Time (seconds)"))
             curve_marker = ["", ""]
 
@@ -153,15 +153,14 @@ class PlotResource(QWidget):
         if pms.DYNAMIC_TYPE == pms.DISCRETE:
             self.graph.set_xlim(-1, pms.NOMBRE_PERIODES + 1)
             self.graph.set_xlabel(trans_GA(u"Periods"))
-            self.graph.set_xticks(range(0, pms.NOMBRE_PERIODES + 1), 5)
+            self.graph.set_xticks(range(0, pms.NOMBRE_PERIODES + 1, 5))
             curve_marker = "."
 
         elif pms.DYNAMIC_TYPE == pms.CONTINUOUS:
             self.graph.set_xlim(
                 -5, pms.CONTINUOUS_TIME_DURATION.total_seconds() + 5)
             self.graph.set_xticks(
-                range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1,
-                      30))
+                range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1, 60))
             self.graph.set_xlabel(trans_GA(u"Time (seconds)"))
             curve_marker = ""
 
@@ -202,7 +201,7 @@ class PlotPayoff(QWidget):
 
         elif pms.DYNAMIC_TYPE == pms.CONTINUOUS:
             self.graph.set_xlim(-5, pms.CONTINUOUS_TIME_DURATION.total_seconds() + 5)
-            self.graph.set_xticks(range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1, 30))
+            self.graph.set_xticks(range(0, int(pms.CONTINUOUS_TIME_DURATION.total_seconds()) + 1, 60))
             self.graph.set_xlabel(trans_GA(u"Time (seconds)"))
 
         if self.payoffs.curve is None:
