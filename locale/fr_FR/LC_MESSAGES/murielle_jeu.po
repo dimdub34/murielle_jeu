@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 12:40+0100\n"
-"PO-Revision-Date: 2019-12-03 12:41+0100\n"
+"POT-Creation-Date: 2019-12-06 09:23+0100\n"
+"PO-Revision-Date: 2019-12-06 09:23+0100\n"
 "Last-Translator: Dimitri DUBOIS <dimitri.dubois@umontpellier.fr>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -43,8 +43,8 @@ msgid "which corresponds to "
 msgstr "soit "
 
 #: /home/dimitri/Dropbox/travail/programmes/le2m-v2.1/le2m/parts/murielle_jeu/murielle_jeuRemote.py:142
-msgid "Instant"
-msgstr "Instant"
+msgid "Second"
+msgstr "Seconde"
 
 #: /home/dimitri/Dropbox/travail/programmes/le2m-v2.1/le2m/parts/murielle_jeu/murielle_jeuRemote.py:144
 msgid "Period"
@@ -52,7 +52,7 @@ msgstr "Période"
 
 #: /home/dimitri/Dropbox/travail/programmes/le2m-v2.1/le2m/parts/murielle_jeu/murielle_jeuRemote.py:145
 msgid "Instant payoff"
-msgstr "Gain de l'instant"
+msgstr "Gain instantané"
 
 #: /home/dimitri/Dropbox/travail/programmes/le2m-v2.1/le2m/parts/murielle_jeu/murielle_jeuRemote.py:146
 msgid "Period payoff"
@@ -97,6 +97,9 @@ msgstr "Votre extraction"
 #: /home/dimitri/Dropbox/travail/programmes/le2m-v2.1/le2m/parts/murielle_jeu/murielle_jeu_gui.py:262
 msgid "Do you confirm your choice?"
 msgstr "Vous confirmez votre choix?"
+
+#~ msgid "Instant"
+#~ msgstr "Instant"
 
 #~ msgid "Discounted payoff"
 #~ msgstr "Gain de l'instant actualisé"

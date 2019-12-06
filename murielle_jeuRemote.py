@@ -139,7 +139,7 @@ class RemoteGA(IRemote, QObject):
 
         # text information
         old = self.text_infos
-        the_time_str = texts_GA.trans_GA(u"Instant") if \
+        the_time_str = texts_GA.trans_GA(u"Second") if \
             pms.DYNAMIC_TYPE == pms.CONTINUOUS else \
             texts_GA.trans_GA(u"Period")
         the_time_payoff_str = texts_GA.trans_GA(u"Instant payoff") if pms.DYNAMIC_TYPE == pms.CONTINUOUS else \
